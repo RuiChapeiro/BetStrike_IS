@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "BetStrike.Resultados.API.Controllers.JogosController",
+    "Method": "InserirJogo",
+    "RelativePath": "api/Jogos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoJogo",
+        "Type": "BetStrike.Resultados.API.Models.Jogo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BetStrike.Resultados.API.Controllers.JogosController",
+    "Method": "ObterJogos",
+    "RelativePath": "api/Jogos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BetStrike.Resultados.API.Controllers.JogosController",
+    "Method": "AtualizarJogo",
+    "RelativePath": "api/Jogos/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "jogoAtualizado",
+        "Type": "BetStrike.Resultados.API.Models.Jogo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BetStrike.Resultados.API.Controllers.JogosController",
+    "Method": "ObterJogoPorCodigo",
+    "RelativePath": "api/Jogos/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BetStrike.Resultados.API.Controllers.JogosController",
+    "Method": "RemoverJogo",
+    "RelativePath": "api/Jogos/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
