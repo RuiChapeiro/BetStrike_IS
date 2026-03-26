@@ -38,21 +38,21 @@
 - [X] **Endpoint DELETE `{id}`**: Remover jogo (só se o estado for `1 - Agendado`).
 
 ## 4. Plataforma de Gestão de Apostas (API REST)
-- [ ] **Criar projeto da API REST e integrar com Stored Procedures de `Apostas`.**
-- [ ] **Gestão de Utilizadores**: 
-  - [ ] Criar endpoint de registo (Processo atómico: Criar utilizador e saldo inicial de `50.00` em `Pagamentos`).
-- [ ] **Gestão de Apostas**:
-  - [ ] POST para registar aposta (debita saldo imediatamente).
-  - [ ] GET com vários filtros (utilizador, jogo, estado, datas).
-  - [ ] GET detalhe da aposta e prémio potencial.
-  - [ ] POST/DELETE para cancelar aposta pendente num jogo `Agendado` (e reembolsar o valor).
-- [ ] **Gestão de Jogos**:
-  - [ ] Integração para guardar/atualizar dados provindos da API de Resultados.
-  - [ ] Resolver apostas autonomamente sempre que estado mude para finalizado.
-- [ ] **Gestão de Resultados e Estatísticas**:
-  - [ ] Endpoints para colocar e resgatar o resultado final.
-  - [ ] Estatísticas isoladas por Jogo e Agregadas (por Competição).
-- [ ] **Ferramenta de Testes**: Endpoint para Depósito de dinheiro fictício em `Pagamentos`.
+- [X] **Criar projeto da API REST e integrar com Stored Procedures de `Apostas`.**
+- [X] **Gestão de Utilizadores**: 
+  - [X] Criar endpoint de registo (Processo atómico: Criar utilizador e saldo inicial de `50.00` em `Pagamentos`).
+- [X] **Gestão de Apostas**:
+  - [X] POST para registar aposta (debita saldo imediatamente).
+  - [X] GET com vários filtros (utilizador, jogo, estado, datas).
+  - [X] GET detalhe da aposta e prémio potencial.
+  - [X] POST/DELETE para cancelar aposta pendente num jogo `Agendado` (e reembolsar o valor).
+- [X] **Gestão de Jogos**:
+  - [X] Integração para guardar/atualizar dados provindos da API de Resultados.
+  - [X] Resolver apostas autonomamente sempre que estado mude para finalizado.
+- [X] **Gestão de Resultados e Estatísticas**:
+  - [X] Endpoints para colocar e resgatar o resultado final.
+  - [X] Estatísticas isoladas por Jogo e Agregadas (por Competição).
+- [X] **Ferramenta de Testes**: Endpoint para Depósito de dinheiro fictício em `Pagamentos`.
 
 ## 5. Aplicação Geradora de Dados (Consola ou GUI)
 - [ ] **Lógica de Partidas/Jornadas**:

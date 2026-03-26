@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="BetStrike.Apostas.API/BetStrike.Apostas.API.csproj" Id="dda18025-b0a8-4e7d-b268-3e9e18a771c2" />
   <Project Path="BetStrike.Resultados.API/BetStrike.Resultados.API.csproj" Id="ca6ec3a1-d96f-4cd9-94f8-20740fbd8787" />
 </Solution>
