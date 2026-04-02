@@ -1,0 +1,15 @@
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\bin\Debug\net10.0\BetStrike.Gerador.exe
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\bin\Debug\net10.0\BetStrike.Gerador.deps.json
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\bin\Debug\net10.0\BetStrike.Gerador.runtimeconfig.json
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\bin\Debug\net10.0\BetStrike.Gerador.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\bin\Debug\net10.0\BetStrike.Gerador.pdb
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.AssemblyInfoInputs.cache
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.AssemblyInfo.cs
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.csproj.CoreCompileInputs.cache
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.sourcelink.json
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\refint\BetStrike.Gerador.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.pdb
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\BetStrike.Gerador.genruntimeconfig.cache
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Gerador\obj\Debug\net10.0\ref\BetStrike.Gerador.dll

@@ -19,6 +19,9 @@ C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\D
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Microsoft.OpenApi.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
@@ -65,6 +68,3 @@ C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\D
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\BetStrike.Apostas.API.pdb
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\BetStrike.Apostas.API.genruntimeconfig.cache
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\ref\BetStrike.Apostas.API.dll
-C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll

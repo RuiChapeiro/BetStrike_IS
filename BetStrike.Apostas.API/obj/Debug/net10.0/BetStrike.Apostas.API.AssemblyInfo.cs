@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BetStrike.Apostas.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6ee30325025ca055e904d12ea0e939134bff377")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fed909738e29fc96dcca8e0227d7e7a599644a68")]
 [assembly: System.Reflection.AssemblyProductAttribute("BetStrike.Apostas.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BetStrike.Apostas.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

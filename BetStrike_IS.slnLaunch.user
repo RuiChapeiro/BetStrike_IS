@@ -1,0 +1,21 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "BetStrike.Apostas.API\\BetStrike.Apostas.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "BetStrike.Resultados.API\\BetStrike.Resultados.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "BetStrike.Gerador\\BetStrike.Gerador.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

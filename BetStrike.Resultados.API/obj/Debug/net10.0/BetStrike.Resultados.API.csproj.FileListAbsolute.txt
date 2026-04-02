@@ -67,3 +67,4 @@ C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\ob
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\obj\Debug\net10.0\BetStrike.Resultados.API.sourcelink.json
