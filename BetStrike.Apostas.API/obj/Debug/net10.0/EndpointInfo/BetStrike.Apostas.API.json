@@ -219,6 +219,18 @@
         }
       }
     },
+    "/api/jogos/disponiveis-aposta": {
+      "get": {
+        "tags": [
+          "JogosApostas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ResultadosDashboard/resultado": {
       "post": {
         "tags": [
@@ -265,6 +277,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Utilizadores": {
+      "get": {
+        "tags": [
+          "Utilizadores"
         ],
         "responses": {
           "200": {
@@ -419,7 +443,8 @@
         "properties": {
           "utilizadorId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "nome": {
             "type": "string",

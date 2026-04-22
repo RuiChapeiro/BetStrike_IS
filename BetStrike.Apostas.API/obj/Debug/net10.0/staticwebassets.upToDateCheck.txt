@@ -1,0 +1,6 @@
+wwwroot\app.js
+wwwroot\index.html
+wwwroot\styles.css
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\wwwroot\index.html
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\wwwroot\app.js
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\wwwroot\styles.css

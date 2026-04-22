@@ -55,17 +55,17 @@
 - [X] **Ferramenta de Testes**: Endpoint para Depósito de dinheiro fictício em `Pagamentos`.
 
 ## 5. Aplicação Geradora de Dados (Consola ou GUI)
-- [ ] **Lógica de Partidas/Jornadas**:
-  - [ ] Algoritmo de emparelhamento 1ª Liga (9 jogos gerados no arranque). Regra de não duplicar e jogar uma em casa / outra fora em jornadas consecutivas.
-  - [ ] Gerador do ID Automático: `FUT-AAAA-JJNN`.
-- [ ] **Motor de Simulação Em Paralelo (Threads/Tasks)**:
-  - [ ] Simular os 9 jogos ao mesmo tempo.
-  - [ ] Updates cronometrados (intervalos de 10s = 10 minutos simulados).
-  - [ ] Flow de Estados: `Agendado(1) -> Em Curso(2) -> Finalizado(3)`.
-  - [ ] Simulação de marcadores aleatórios durante `Em Curso`(Média de 2-3 golos por jogo).
-- [ ] **Comunicação de Saída**:
-  - [ ] Chamada de POST para a **Plataforma de Resultados** ao criar jogos.
-  - [ ] Chamada de PUT para a **Plataforma de Resultados** a cada 10 segundos quando o estado ou número de golos alterar.
+- [X] **Lógica de Partidas/Jornadas**:
+  - [X] Algoritmo de emparelhamento 1ª Liga (9 jogos gerados no arranque). Regra de não duplicar e jogar uma em casa / outra fora em jornadas consecutivas.
+  - [X] Gerador do ID Automático: `FUT-AAAA-JJNN`.
+- [X] **Motor de Simulação Em Paralelo (Threads/Tasks)**:
+  - [X] Simular os 9 jogos ao mesmo tempo.
+  - [X] Updates cronometrados (intervalos de 10s = 10 minutos simulados).
+  - [X] Flow de Estados: `Agendado(1) -> Em Curso(2) -> Finalizado(3)`.
+  - [X] Simulação de marcadores aleatórios durante `Em Curso`(Média de 2-3 golos por jogo).
+- [X] **Comunicação de Saída**:
+  - [X] Chamada de POST para a **Plataforma de Resultados** ao criar jogos.
+  - [X] Chamada de PUT para a **Plataforma de Resultados** a cada 10 segundos quando o estado ou número de golos alterar.
 
 ## 6. Parte Exploratória — Containerização da Infraestrutura
 - [ ] **Dockerizar Serviços**:

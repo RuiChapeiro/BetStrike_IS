@@ -3,6 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddSingleton<BetStrike.Apostas.API.Data.DbConnectionHelper>();
+builder.Services.AddHttpClient();
 
 // 1. Dizer à API para gerar o mapeamento dos endpoints
 builder.Services.AddEndpointsApiExplorer();
@@ -21,6 +22,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 app.UseAuthorization();
 app.MapControllers();
 

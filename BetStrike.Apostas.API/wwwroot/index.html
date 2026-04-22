@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BetStrike - Apostas</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="page">
+        <header class="topbar">
+            <h1>BetStrike - Apostas</h1>
+
+            <div class="topbar-actions">
+                <div class="user-picker">
+                    <select id="userSelect" aria-label="Selecionar utilizador"></select>
+                    <button id="newUserButton" type="button" class="add-user" title="Criar utilizador">+</button>
+                </div>
+                <button id="menuToggle" class="menu-toggle" type="button" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="saldo-bar">
+            <div class="saldo-texto">Saldo: <span id="saldoValor">0.00€</span></div>
+        </section>
+
+        <main id="gamesList" class="games-list"></main>
+    </div>
+
+    <footer class="bet-slip">
+        <div class="campo">
+            <label for="stakeInput">Montante:</label>
+            <input id="stakeInput" type="number" min="0.01" step="0.01" value="0" />
+        </div>
+
+        <div class="odd-box">
+            <span id="oddTotal">1.00</span>
+        </div>
+
+        <div class="ganhos-box">
+            <div>Ganhos Potenciais</div>
+            <strong id="ganhosPotenciais">0.00€</strong>
+        </div>
+
+        <button id="apostarButton" type="button" class="apostar-btn">APOSTAR</button>
+    </footer>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <aside id="sideMenu" class="side-menu">
+        <div class="side-header">
+            <h2>Apostas do Utilizador</h2>
+            <button id="closeMenu" class="icon-btn" type="button" aria-label="Fechar">×</button>
+        </div>
+
+        <section class="menu-block deposit-block">
+            <h3>Depósito rápido</h3>
+            <div class="deposit-row">
+                <input id="depositoInput" type="number" min="0.01" step="0.01" placeholder="Valor" />
+                <button id="depositoButton" type="button">Depositar</button>
+            </div>
+        </section>
+
+        <section class="menu-block bets-block">
+            <div id="currentBetsList" class="bets-list"></div>
+        </section>
+
+        <button id="showOldBetsButton" type="button" class="old-bets-btn">Ver apostas antigas</button>
+        <div id="oldBetsContainer" class="bets-list hidden"></div>
+
+        <section class="menu-block response-block">
+            <h3>Resposta</h3>
+            <div class="output-box">
+                <pre id="output"></pre>
+            </div>
+        </section>
+    </aside>
+
+    <script src="app.js"></script>
+</body>
+</html>

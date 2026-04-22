@@ -2,7 +2,6 @@
 using BetStrike.Apostas.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
-using System.Data;
 
 namespace BetStrike.Apostas.API.Controllers
 {
@@ -17,62 +16,85 @@ namespace BetStrike.Apostas.API.Controllers
             _db = db;
         }
 
+        [HttpGet]
+        public IActionResult ListarUtilizadores()
+        {
+            var utilizadores = new List<UtilizadorResumoResponse>();
+
+            try
+            {
+                using var conexao = _db.ObterConexao();
+                using var cmd = new SqlCommand(@"
+                    SELECT UtilizadorID, SaldoAtual, DataHoraAtualizacao
+                    FROM Pagamentos.dbo.Saldo_Utilizador
+                    ORDER BY UtilizadorID;", conexao);
+
+                conexao.Open();
+                using var reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    utilizadores.Add(new UtilizadorResumoResponse
+                    {
+                        UtilizadorId = (int)reader["UtilizadorID"],
+                        SaldoAtual = (decimal)reader["SaldoAtual"],
+                        DataHoraAtualizacao = (DateTime)reader["DataHoraAtualizacao"]
+                    });
+                }
+
+                return Ok(utilizadores);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensagem = "Erro ao listar utilizadores.", erro = ex.Message });
+            }
+        }
+
         // POST: api/utilizadores/registar
         [HttpPost("registar")]
         public IActionResult RegistarUtilizador([FromBody] CriarUtilizadorRequest request)
         {
             try
             {
-                using (var conexao = _db.ObterConexao())
+                using var conexao = _db.ObterConexao();
+                conexao.Open();
+
+                using var transacao = conexao.BeginTransaction();
+
+                try
                 {
-                    conexao.Open();
+                    var utilizadorId = request.UtilizadorId ?? ObterProximoUtilizadorId(conexao, transacao);
 
-                    // Utilizamos uma transação para garantir a Atomicidade exigida no Ponto 4.
-                    // Se a operação na Pagamentos falhar, não fica em estado inconsistente.
-                    using (var transacao = conexao.BeginTransaction())
+                    using var cmdPagamentos = new SqlCommand(@"
+                        INSERT INTO Pagamentos.dbo.Saldo_Utilizador (UtilizadorID, SaldoAtual, DataHoraAtualizacao)
+                        VALUES (@uid, 50.00, GETDATE());", conexao, transacao);
+
+                    cmdPagamentos.Parameters.AddWithValue("@uid", utilizadorId);
+                    cmdPagamentos.ExecuteNonQuery();
+
+                    transacao.Commit();
+
+                    return Ok(new
                     {
-                        try
-                        {
-                            // Como a criação do utilizador na BD Apostas depende do vosso modelo mental de utilizadores, 
-                            // a exigência principal é o Saldo_Utilizador em 'Pagamentos'.
-                            // Vamos inserir diretamente na Base de Dados Pagamentos com 50.00€ (Promoção)!
+                        mensagem = "Utilizador registado com sucesso!",
+                        id = utilizadorId,
+                        nome = request.Nome,
+                        saldoInicial = "50.00€"
+                    });
+                }
+                catch (SqlException ex)
+                {
+                    transacao.Rollback();
+                    if (ex.Number == 2627)
+                        return Conflict(new { mensagem = "Já existe um utilizador com este ID." });
 
-                            var cmdPagamentos = new SqlCommand(@"
-                                INSERT INTO Pagamentos.dbo.Saldo_Utilizador (UtilizadorID, SaldoAtual, DataHoraAtualizacao)
-                                VALUES (@uid, 50.00, GETDATE());
-                            ", conexao, transacao);
-
-                            cmdPagamentos.Parameters.AddWithValue("@uid", request.UtilizadorId);
-                            cmdPagamentos.ExecuteNonQuery();
-
-                            // Tudo correu bem, 'Commit' confirma a transação
-                            transacao.Commit();
-
-                            return Ok(new
-                            {
-                                mensagem = "Utilizador registado com sucesso!",
-                                id = request.UtilizadorId,
-                                saldoInicial = "50.00€"
-                            });
-                        }
-                        catch (SqlException ex)
-                        {
-                            transacao.Rollback();
-                            // Código de Erro 2627 é Violação de Chave Primária (Utilizador já existe)
-                            if (ex.Number == 2627)
-                                return Conflict(new { mensagem = "Já existe um utilizador com este ID." });
-
-                            throw;
-                        }
-                    }
+                    throw;
                 }
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { mensagem = "Ocorreu um erro interno no servidor.", erro = ex.Message });
             }
-
-
         }
 
         // POST: api/utilizadores/{id}/deposito
@@ -87,16 +109,15 @@ namespace BetStrike.Apostas.API.Controllers
                 using var conexao = _db.ObterConexao();
                 using var cmd = new SqlCommand(@"
                     BEGIN TRANSACTION;
-                    
+
                     INSERT INTO Pagamentos.dbo.Transacao (UtilizadorID, Tipo, Valor, DataHora, Estado)
                     VALUES (@uid, 'DE', @val, GETDATE(), 'Processada');
-                    
+
                     UPDATE Pagamentos.dbo.Saldo_Utilizador
                     SET SaldoAtual = SaldoAtual + @val, DataHoraAtualizacao = GETDATE()
                     WHERE UtilizadorID = @uid;
-                    
-                    COMMIT;
-                ", conexao);
+
+                    COMMIT;", conexao);
 
                 cmd.Parameters.AddWithValue("@uid", id);
                 cmd.Parameters.AddWithValue("@val", valor);
@@ -112,6 +133,15 @@ namespace BetStrike.Apostas.API.Controllers
             {
                 return StatusCode(500, new { mensagem = "Erro interno.", erro = ex.Message });
             }
+        }
+
+        private static int ObterProximoUtilizadorId(SqlConnection conexao, SqlTransaction transacao)
+        {
+            using var cmd = new SqlCommand(@"
+                SELECT ISNULL(MAX(UtilizadorID), 0) + 1
+                FROM Pagamentos.dbo.Saldo_Utilizador WITH (UPDLOCK, HOLDLOCK);", conexao, transacao);
+
+            return Convert.ToInt32(cmd.ExecuteScalar());
         }
     }
 }

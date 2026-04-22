@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BetStrike - Resultados</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="shell">
+        <header class="topbar">
+            <div>
+                <h1>BetStrike - Resultados</h1>
+                <p>Plataforma de Resultados em tempo real</p>
+            </div>
+            <button id="menuToggle" class="menu-toggle" type="button" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <main class="content">
+            <section class="results-area">
+                <div class="results-header">
+                    <h2>Resultados</h2>
+                    <button id="refreshButton" type="button" class="refresh-button">Atualizar agora</button>
+                </div>
+                <div id="resultsList" class="results-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <aside id="sideMenu" class="side-menu">
+        <div class="side-menu-header">
+            <h2>Menu</h2>
+            <button id="closeMenu" type="button" class="icon-button" aria-label="Fechar menu">×</button>
+        </div>
+
+        <section class="panel">
+            <h3>Criar jogo</h3>
+            <form id="formCriar">
+                <input name="codigo_Jogo" placeholder="Código (ex: FUT-2026-0101)" required />
+                <input name="dataHoraInicio" type="datetime-local" required />
+                <input name="equipaCasa" placeholder="Equipa Casa" required />
+                <input name="equipaFora" placeholder="Equipa Fora" required />
+                <input name="estado" type="number" min="1" max="5" value="1" required />
+                <button type="submit">Criar</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h3>Atualizar jogo</h3>
+            <form id="formAtualizar">
+                <input name="codigo" placeholder="Código do jogo" required />
+                <input name="dataHoraInicio" type="datetime-local" required />
+                <input name="equipaCasa" placeholder="Equipa Casa" required />
+                <input name="equipaFora" placeholder="Equipa Fora" required />
+                <div class="two-cols">
+                    <input name="golosCasa" type="number" min="0" value="0" required />
+                    <input name="golosFora" type="number" min="0" value="0" required />
+                </div>
+                <input name="estado" type="number" min="1" max="5" value="2" required />
+                <button type="submit">Atualizar</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h3>Pesquisar jogo</h3>
+            <form id="formObterUm">
+                <input name="codigo" placeholder="Código" required />
+                <button type="submit">Pesquisar</button>
+            </form>
+            <pre id="jogoUnico"></pre>
+        </section>
+
+        <section class="panel">
+            <h3>Filtrar jogos</h3>
+            <form id="formFiltros">
+                <input name="data" type="date" />
+                <input name="estado" type="number" min="1" max="5" placeholder="Estado" />
+                <button type="submit">Aplicar filtros</button>
+                <button type="button" id="btnListarTodos">Listar todos</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h3>Remover jogo</h3>
+            <form id="formRemover">
+                <input name="codigo" placeholder="Código do jogo" required />
+                <button type="submit" class="danger">Remover</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h3>Resposta da API</h3>
+            <pre id="output"></pre>
+        </section>
+    </aside>
+
+    <script src="app.js"></script>
+</body>
+</html>

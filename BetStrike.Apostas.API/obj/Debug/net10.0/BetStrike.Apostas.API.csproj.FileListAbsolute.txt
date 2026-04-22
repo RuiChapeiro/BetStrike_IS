@@ -68,3 +68,7 @@ C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\D
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\BetStrike.Apostas.API.pdb
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\BetStrike.Apostas.API.genruntimeconfig.cache
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\ref\BetStrike.Apostas.API.dll
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\bin\Debug\net10.0\BetStrike.Apostas.API.staticwebassets.runtime.json
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\compressed\gswtskpv06-{0}-uqlw9eipsv-uqlw9eipsv.gz
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\compressed\pu8utuwyax-{0}-8fvdn2sw4o-8fvdn2sw4o.gz
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Apostas.API\obj\Debug\net10.0\compressed\p3vc8dn1qb-{0}-1j2oive7nh-1j2oive7nh.gz

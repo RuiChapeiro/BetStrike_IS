@@ -159,6 +159,10 @@
             "type": "string",
             "nullable": true
           },
+          "jornada": {
+            "type": "integer",
+            "format": "int32"
+          },
           "dataHoraInicio": {
             "type": "string",
             "format": "date-time"

@@ -132,6 +132,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BetStrike.Apostas.API.Controllers.JogosApostasController",
+    "Method": "ObterJogosDisponiveisParaAposta",
+    "RelativePath": "api/jogos/disponiveis-aposta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BetStrike.Apostas.API.Controllers.ResultadosDashboardController",
     "Method": "ObterEstatisticasJogo",
     "RelativePath": "api/ResultadosDashboard/jogo/{jogoId}/estatisticas",
@@ -161,6 +171,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BetStrike.Apostas.API.Controllers.UtilizadoresController",
+    "Method": "ListarUtilizadores",
+    "RelativePath": "api/Utilizadores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

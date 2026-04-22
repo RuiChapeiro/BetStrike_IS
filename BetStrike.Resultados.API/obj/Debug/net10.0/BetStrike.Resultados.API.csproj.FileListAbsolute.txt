@@ -68,3 +68,7 @@ C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\bi
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\obj\Debug\net10.0\BetStrike.Resultados.API.sourcelink.json
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\bin\Debug\net10.0\BetStrike.Resultados.API.staticwebassets.runtime.json
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\obj\Debug\net10.0\compressed\5wyugtdg8z-{0}-z6xs2kn3rg-z6xs2kn3rg.gz
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\obj\Debug\net10.0\compressed\f0ek1i029i-{0}-dy2sjsl036-dy2sjsl036.gz
+C:\Users\ruiso\source\repos\RuiChapeiro\BetStrike_IS\BetStrike.Resultados.API\obj\Debug\net10.0\compressed\nk14k9lfbi-{0}-hezbu2f9q8-hezbu2f9q8.gz

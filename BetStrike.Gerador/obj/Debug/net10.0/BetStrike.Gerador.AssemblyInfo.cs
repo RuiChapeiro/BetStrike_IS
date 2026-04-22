@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BetStrike.Gerador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fed909738e29fc96dcca8e0227d7e7a599644a68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7ae032f6f00b63438cff26ba2e77bbadc5ea1ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("BetStrike.Gerador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BetStrike.Gerador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
